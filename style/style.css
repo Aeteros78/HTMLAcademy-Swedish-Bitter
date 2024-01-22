@@ -1,7 +1,127 @@
+/* Общие стили */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFFFFF;
+    font-weight: 400;
     color: #303030;
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+}
+
+/* Стили header */
+
+.page__header {
+    width: 1100px;
+    margin: 0 auto 15px auto;
+    padding: 35px 90px;
+}
+
+.menu__list__link {
+    color: #9A9A9A;
+    text-decoration: none;
+}
+
+/* Стили главного блока */
+
+.hero-section__title {
+    font-size: 45px;
+    line-height: 55px;
+}
+
+/* Стили блока с цитатой */
+
+.blockquote {   
+    text-align: center;
+}
+
+.quote {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.quote__footer {
+    font-weight: 700;
+}
+
+/* Общие cтили блоков с фактами */
+
+.fact__title {
+   font-size: 28px;
+   font-weight: 400;
+   line-height: 55px;
+   color: #A4C58C;
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+   text-underline-offset: 10px;
+   text-underline-position: under;
+}
+
+.fact__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.fact__text {
+    line-height: 30px;
+    color: #000000;
+}
+
+/* Стили блока с симптомами */
+
+.section-symptoms__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.section-symptoms__list__item {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.section-symptoms__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #7EB252;
+}
+
+/* Стили блока галлерея */
+
+.section-gallery__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+/* Стили блока footer */
+
+.page__footer {
+    background-color: #F6F9F3;
+}
+
+.footer__link {
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: underline;
+    color: #9A9A9A;
+}
+
+.footer__menu__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__menu__list__link {
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #000000;
 }
