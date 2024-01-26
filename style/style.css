@@ -14,12 +14,13 @@ body {
 
 .page__header {
     width: 1100px;
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
     padding: 35px 90px;
 }
 
 .header__menu {
     display: flex;
+    border-bottom: 2px solid #A4C58C;
 }
 
 .menu__list {
@@ -27,6 +28,8 @@ body {
     margin: 0;
     padding: 0;
     width: 270px;
+    display: flex;
+    gap: 35px;
 }
 
 .menu__list__link {
@@ -40,6 +43,7 @@ body {
 
 .header__menu .logo {
     margin-right: 60px;
+    margin-top: 0;
 }
 
 .header__search {
@@ -56,7 +60,7 @@ body {
 }
 
 .hero-section {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 .hero-section__title {
@@ -73,6 +77,8 @@ body {
     width: 700px;
     margin: 0 auto;
     margin-bottom: 110px;
+    border-top: 2px solid #A4C58C;
+    border-bottom: 2px solid #A4C58C;
 }
 
 .blockquote {   
@@ -82,7 +88,7 @@ body {
 .quote {
     font-size: 24px;
     line-height: 40px;
-    padding: 45px 0;
+    padding: 25px;
 }
 
 .quote .blockquote {
@@ -91,6 +97,7 @@ body {
 
 .quote__footer {
     font-weight: 700;
+    margin-bottom: 37px
 }
 
 /* Общие cтили блоков с фактами */
@@ -98,10 +105,21 @@ body {
 .article-fact {
     width: 1020px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-fact__content {
+    width: 560px;
+}
+
+.article-fact__img {
+    width: 420px;
 }
 
 .article-fact:first-of-type {
     margin-bottom: 60px;
+    flex-direction: row-reverse;
 }
 
 .article-fact:last-of-type {
@@ -117,6 +135,8 @@ body {
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
     text-underline-position: under;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .fact__subtitle {
@@ -132,15 +152,39 @@ body {
 
 /* Стили блока с симптомами */
 
+.section-symptoms {
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-symptoms__img {
+    width: 500px;
+}
+
+.section-symptoms__colunms {
+    width: 500px;
+}
+
 .section-symptoms__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    margin-top: 65px;
+    margin-bottom: 90px;
 }
 
 .section-symptoms__list__item {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+.section-symptoms__list__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.section-symptoms__list__item:last-child {
+    margin-bottom: 70px;
 }
 
 .section-symptoms__button {
@@ -151,20 +195,80 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     background-color: #7EB252;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
 }
 
 /* Стили блока галлерея */
+
+.section-gallery {
+    width: 930px;
+    margin: 0 auto;
+}
 
 .section-gallery__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 90px;
+}
+
+.section-gallery__wrapper {
+    display: flex;
+}
+
+.section-gallery__big-img {
+    width: 740px;
+    margin-right: 20px;
+}
+
+.section-gallery-preview__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 170px;
+}
+
+.section-gallery-preview__list__item:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 /* Стили блока footer */
 
 .page__footer {
     background-color: #F6F9F3;
+    padding: 90px 0;
+    margin: 110px auto 0 auto;
+    width: 1280px;
+}
+
+.page__footer__contaner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page__footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer__link {
